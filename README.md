@@ -1,135 +1,73 @@
-# 🐍 Python Code Runner – A Snake-Inspired Programming Game
-Python Code Runner is a browser-based game inspired by the classic Snake game, built using React and styled with Tailwind CSS. In this modern twist, you control a snake that represents a Python program, navigating a grid to collect programming elements like functions, variables, and loops—while avoiding bugs and leveraging power-ups like Debug Mode and Speed Boosts.
+# Welcome to your Lovable project
 
-🎮 Gameplay Features
-Objective: Control the snake to collect code elements and earn points, while avoiding bugs that end the game.
+## Project info
 
-Code Elements & Points:
+**URL**: https://lovable.dev/projects/690efdfe-fd93-461c-ae8a-5d0f1a53311f
 
-🔷 Functions: +50 points
+## How can I edit this code?
 
-🟢 Variables: +30 points
+There are several ways of editing your application.
 
-🟣 Loops: +40 points
+**Use Lovable**
 
-🟡 Debug Mode: +100 points — temporary invincibility
+Simply visit the [Lovable Project](https://lovable.dev/projects/690efdfe-fd93-461c-ae8a-5d0f1a53311f) and start prompting.
 
-🔵 Speed Boost: +75 points — temporarily increases snake speed
+Changes made via Lovable will be committed automatically to this repo.
 
-Hazards:
+**Use your preferred IDE**
 
-🔴 Bugs: Colliding ends the game.
+If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
 
-Controls: Use the arrow keys to move the snake in four directions.
+The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
 
-Visual Style: Retro, code-themed aesthetic with responsive design using Tailwind CSS.
+Follow these steps:
 
-Notifications: Real-time feedback via toast messages (powered by sonner).
+```sh
+# Step 1: Clone the repository using the project's Git URL.
+git clone <YOUR_GIT_URL>
 
-🧑‍💻 Technical Details
-Canvas Size: 600x400 pixels using a 20x20 grid (30x20 cells).
+# Step 2: Navigate to the project directory.
+cd <YOUR_PROJECT_NAME>
 
-Game Loop: Built using setInterval, with dynamic speed adjustments.
+# Step 3: Install the necessary dependencies.
+npm i
 
-Entity Spawning:
+# Step 4: Start the development server with auto-reloading and an instant preview.
+npm run dev
+```
 
-Occurs every 2 seconds
+**Edit a file directly in GitHub**
 
-Weighted probabilities:
+- Navigate to the desired file(s).
+- Click the "Edit" button (pencil icon) at the top right of the file view.
+- Make your changes and commit the changes.
 
-Functions: 30%
+**Use GitHub Codespaces**
 
-Variables: 30%
+- Navigate to the main page of your repository.
+- Click on the "Code" button (green button) near the top right.
+- Select the "Codespaces" tab.
+- Click on "New codespace" to launch a new Codespace environment.
+- Edit files directly within the Codespace and commit and push your changes once you're done.
 
-Loops: 25%
+## What technologies are used for this project?
 
-Bugs: 10%
+This project is built with:
 
-Debug Mode: 3%
+- Vite
+- TypeScript
+- React
+- shadcn-ui
+- Tailwind CSS
 
-Speed Boost: 2%
+## How can I deploy this project?
 
-State Management: Powered by React Hooks (useState, useEffect, useCallback).
+Simply open [Lovable](https://lovable.dev/projects/690efdfe-fd93-461c-ae8a-5d0f1a53311f) and click on Share -> Publish.
 
-Collision Detection: Wall collisions, self-collisions, and item interactions.
+## Can I connect a custom domain to my Lovable project?
 
-Routing: Includes a custom 404 page (NotFound.tsx) using React Router.
+Yes, you can!
 
-Reusable UI Components: Located under src/components/ui/ for consistency.
+To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
 
-📂 Project Structure
-plaintext
-Copy
-Edit
-src/
-├── Index.tsx                # Entry point
-├── PythonCodeRunner.tsx     # Main game logic
-├── NotFound.tsx             # 404 error page
-├── components/ui/           # Reusable UI elements (Button, Card)
-
-public/                      # Static assets and HTML template
-🚀 Getting Started
-Prerequisites:
-Node.js (v16 or higher)
-
-npm or yarn
-
-Installation:
-bash
-Copy
-Edit
-git clone <repository-url>
-cd python-code-runner
-npm install   # or yarn install
-Run the Game:
-bash
-Copy
-Edit
-npm start     # or yarn start
-Open your browser and visit: http://localhost:3000
-
-📋 Gameplay Instructions
-Start the Game: Click “Start Game”.
-
-Control the Snake: Use arrow keys to navigate.
-
-Collect Elements: Gain points from functions, variables, and loops.
-
-Use Power-ups: Debug Mode and Speed Boost offer temporary advantages.
-
-Avoid Hazards: Don't collide with bugs, walls, or yourself.
-
-Game Over: When you crash, reset to try again.
-
-⚠️ Known Limitations
-Not optimized for mobile devices (keyboard controls only)
-
-No persistent high score tracking
-
-Single-player only
-
-🌟 Future Improvements
-Add touch support for mobile devices
-
-Implement a high score leaderboard
-
-Introduce difficulty levels or custom grid sizes
-
-Add sound effects for collisions and power-ups
-
-🤝 Contributing
-We welcome contributions! To contribute:
-
-Fork the repository
-
-Create a feature branch:
-git checkout -b feature/your-feature-name
-
-Commit your changes:
-git commit -m "Add new feature"
-
-Push to your branch:
-git push origin feature/your-feature-name
-
-Open a pull request
-
+Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
