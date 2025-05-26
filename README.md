@@ -1,199 +1,135 @@
-# Snake-Game
-Python Code Runner
+🐍 Python Code Runner – A Snake-Inspired Programming Game
+Python Code Runner is a browser-based game inspired by the classic Snake game, built using React and styled with Tailwind CSS. In this modern twist, you control a snake that represents a Python program, navigating a grid to collect programming elements like functions, variables, and loops—while avoiding bugs and leveraging power-ups like Debug Mode and Speed Boosts.
 
-Overview
+🎮 Gameplay Features
+Objective: Control the snake to collect code elements and earn points, while avoiding bugs that end the game.
 
-Python Code Runner is a React-based web game inspired by the classic Snake game, themed around Python programming concepts. Players control a snake that represents a Python program, navigating a grid to collect programming elements (functions, variables, loops) while avoiding bugs. Special power-ups like debug mode and speed boosts add strategic depth to the gameplay.
+Code Elements & Points:
 
-Features
+🔷 Functions: +50 points
 
+🟢 Variables: +30 points
 
+🟣 Loops: +40 points
 
+🟡 Debug Mode: +100 points — temporary invincibility
 
+🔵 Speed Boost: +75 points — temporarily increases snake speed
 
-Gameplay: Control a snake to collect programming elements (functions, variables, loops) for points, avoid bugs that end the game, and collect power-ups (debug mode, speed boost).
+Hazards:
 
+🔴 Bugs: Colliding ends the game.
 
+Controls: Use the arrow keys to move the snake in four directions.
 
-Scoring:
+Visual Style: Retro, code-themed aesthetic with responsive design using Tailwind CSS.
 
-Functions: +50 points
-Variables: +30 points
-Loops: +40 points
-Debug Mode: +100 points (temporary invincibility)
-Speed Boost: +75 points (temporary speed increase)
+Notifications: Real-time feedback via toast messages (powered by sonner).
 
+🧑‍💻 Technical Details
+Canvas Size: 600x400 pixels using a 20x20 grid (30x20 cells).
 
-Controls: Use arrow keys to navigate the snake.
+Game Loop: Built using setInterval, with dynamic speed adjustments.
 
+Entity Spawning:
 
-Visuals: Grid-based canvas with a retro, code-themed aesthetic using Tailwind CSS for styling.
+Occurs every 2 seconds
 
+Weighted probabilities:
 
-Feedback: Toast notifications for game events using the sonner library.
+Functions: 30%
 
+Variables: 30%
+
+Loops: 25%
+
+Bugs: 10%
+
+Debug Mode: 3%
+
+Speed Boost: 2%
+
+State Management: Powered by React Hooks (useState, useEffect, useCallback).
+
+Collision Detection: Wall collisions, self-collisions, and item interactions.
+
+Routing: Includes a custom 404 page (NotFound.tsx) using React Router.
+
+Reusable UI Components: Located under src/components/ui/ for consistency.
+
+📂 Project Structure
+plaintext
+Copy
+Edit
+src/
+├── Index.tsx                # Entry point
+├── PythonCodeRunner.tsx     # Main game logic
+├── NotFound.tsx             # 404 error page
+├── components/ui/           # Reusable UI elements (Button, Card)
+
+public/                      # Static assets and HTML template
+🚀 Getting Started
 Prerequisites:
 Node.js (v16 or higher)
+
 npm or yarn
-A modern web browser
 
 Installation:
-Clone the Repository:
+bash
+Copy
+Edit
 git clone <repository-url>
 cd python-code-runner
+npm install   # or yarn install
+Run the Game:
+bash
+Copy
+Edit
+npm start     # or yarn start
+Open your browser and visit: http://localhost:3000
 
-Install Dependencies:
-npm install or yarn install
+📋 Gameplay Instructions
+Start the Game: Click “Start Game”.
 
+Control the Snake: Use arrow keys to navigate.
 
+Collect Elements: Gain points from functions, variables, and loops.
 
-Start the Development Server:
-npm start or yarn start
+Use Power-ups: Debug Mode and Speed Boost offer temporary advantages.
 
+Avoid Hazards: Don't collide with bugs, walls, or yourself.
 
-Open your browser and navigate to http://localhost:3000.
+Game Over: When you crash, reset to try again.
 
-Project Structure
+⚠️ Known Limitations
+Not optimized for mobile devices (keyboard controls only)
 
-src/Index.tsx: Entry point rendering the PythonCodeRunner component.
-src/PythonCodeRunner.tsx: Core game logic, including snake movement, entity generation, collision detection, and UI rendering.
-src/NotFound.tsx: 404 error page for invalid routes.
-src/components/ui/: Reusable UI components (Button, Card) for consistent styling.
-public/: Static assets and HTML template.
+No persistent high score tracking
 
-Dependencies:
+Single-player only
 
-React: Frontend framework for building the UI.
-React Router DOM: Handles routing, including the 404 page.
-Tailwind CSS: Utility-first CSS framework for styling.
-Sonner: Toast notification library for game feedback.
-Lucide React: Icon library for game elements (e.g., Play, Bug, Trophy).
+🌟 Future Improvements
+Add touch support for mobile devices
 
+Implement a high score leaderboard
 
-Gameplay Instructions
+Introduce difficulty levels or custom grid sizes
 
-Start the Game: Click the "Start Game" button to begin.
-Navigate the Snake: Use arrow keys to move the snake (up, down, left, right).
+Add sound effects for collisions and power-ups
 
+🤝 Contributing
+We welcome contributions! To contribute:
 
-Collect Elements:
+Fork the repository
 
+Create a feature branch:
+git checkout -b feature/your-feature-name
 
+Commit your changes:
+git commit -m "Add new feature"
 
+Push to your branch:
+git push origin feature/your-feature-name
 
+Open a pull request
 
-Functions (blue): +50 points
-
-
-
-Variables (green): +30 points
-
-
-
-Loops (purple): +40 points
-
-
-
-Debug (yellow): +100 points, activates temporary invincibility
-
-
-
-Speed (cyan): +75 points, increases snake speed temporarily
-
-
-
-Avoid Bugs (red): Colliding with a bug ends the game.
-
-
-
-Game Over: Occurs if the snake hits the wall, itself, or a bug. Reset the game to try again.
-
-Technical Details
-
-
-
-
-
-Canvas: The game uses a 600x400 pixel canvas with a 20x20 pixel grid (30x20 cells).
-
-
-
-Game Loop: Implemented using setInterval for snake movement and entity spawning, with speed adjustments via the speed state.
-
-
-
-State Management: React hooks (useState, useEffect, useCallback) manage game state, input handling, and rendering.
-
-
-
-Entity Spawning: Entities spawn every 2 seconds with weighted probabilities (functions: 30%, variables: 30%, loops: 25%, bugs: 10%, debug: 3%, speed: 2%).
-
-
-
-Collision Detection: Checks for wall collisions, self-collisions, and entity interactions.
-
-
-
-Responsive Design: Tailwind CSS ensures the UI adapts to different screen sizes.
-
-Known Limitations
-
-
-
-
-
-The game is not optimized for mobile devices (arrow key controls are keyboard-based).
-
-
-
-No persistent high score system.
-
-
-
-Limited to a single-player experience.
-
-Future Improvements
-
-
-
-
-
-Add touch controls for mobile compatibility.
-
-
-
-Implement a high score leaderboard.
-
-
-
-Add difficulty levels or customizable grid sizes.
-
-
-
-Include sound effects for collisions and power-ups.
-
-Contributing
-
-Contributions are welcome! Please:
-
-
-
-
-
-Fork the repository.
-
-
-
-Create a feature branch (git checkout -b feature/new-feature).
-
-
-
-Commit your changes (git commit -m 'Add new feature').
-
-
-
-Push to the branch (git push origin feature/new-feature).
-
-
-
-Open a pull request.
