@@ -17,151 +17,63 @@ Gameplay: Control a snake to collect programming elements (functions, variables,
 
 Scoring:
 
-
-
-
-
 Functions: +50 points
-
-
-
 Variables: +30 points
-
-
-
 Loops: +40 points
-
-
-
 Debug Mode: +100 points (temporary invincibility)
-
-
-
 Speed Boost: +75 points (temporary speed increase)
-
 
 
 Controls: Use arrow keys to navigate the snake.
 
 
-
 Visuals: Grid-based canvas with a retro, code-themed aesthetic using Tailwind CSS for styling.
-
 
 
 Feedback: Toast notifications for game events using the sonner library.
 
-Prerequisites
-
-
-
-
-
+Prerequisites:
 Node.js (v16 or higher)
-
-
-
 npm or yarn
-
-
-
 A modern web browser
 
-Installation
-
-
-
-
-
+Installation:
 Clone the Repository:
-
 git clone <repository-url>
 cd python-code-runner
 
-
-
 Install Dependencies:
-
-npm install
-
-or
-
-yarn install
+npm install or yarn install
 
 
 
 Start the Development Server:
-
-npm start
-
-or
-
-yarn start
-
+npm start or yarn start
 
 
 Open your browser and navigate to http://localhost:3000.
 
 Project Structure
 
-
-
-
-
 src/Index.tsx: Entry point rendering the PythonCodeRunner component.
-
-
-
 src/PythonCodeRunner.tsx: Core game logic, including snake movement, entity generation, collision detection, and UI rendering.
-
-
-
 src/NotFound.tsx: 404 error page for invalid routes.
-
-
-
 src/components/ui/: Reusable UI components (Button, Card) for consistent styling.
-
-
-
 public/: Static assets and HTML template.
 
-Dependencies
-
-
-
-
+Dependencies:
 
 React: Frontend framework for building the UI.
-
-
-
 React Router DOM: Handles routing, including the 404 page.
-
-
-
 Tailwind CSS: Utility-first CSS framework for styling.
-
-
-
 Sonner: Toast notification library for game feedback.
-
-
-
 Lucide React: Icon library for game elements (e.g., Play, Bug, Trophy).
+
 
 Gameplay Instructions
 
-
-
-
-
 Start the Game: Click the "Start Game" button to begin.
-
-
-
 Navigate the Snake: Use arrow keys to move the snake (up, down, left, right).
-
 
 
 Collect Elements:
