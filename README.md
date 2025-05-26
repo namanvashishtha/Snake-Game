@@ -1,4 +1,4 @@
-#🐍 Python Code Runner – A Snake-Inspired Programming Game
+# 🐍 Python Code Runner – A Snake-Inspired Programming Game
 Python Code Runner is a browser-based game inspired by the classic Snake game, built using React and styled with Tailwind CSS. In this modern twist, you control a snake that represents a Python program, navigating a grid to collect programming elements like functions, variables, and loops—while avoiding bugs and leveraging power-ups like Debug Mode and Speed Boosts.
 
 🎮 Gameplay Features
