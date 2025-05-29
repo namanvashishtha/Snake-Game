@@ -18,7 +18,6 @@ Best Aspects of the Project
 
 Contributing
 
-License
 
 ✨ Features
 🎮 Classic Snake Gameplay – Use arrow keys to control the snake, consume food, grow in length, and avoid collisions.
