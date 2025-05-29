@@ -1,7 +1,7 @@
 # 🐍 Snake Game
 Welcome to the Snake Game – a modern take on the classic arcade favorite, built with a cutting-edge web development stack. Guide the snake, eat food, grow longer, and aim for the highest score! Sleek design, blazing performance, and extensibility make this project ideal for developers and retro gaming fans alike.
 
-🎮 Live Demo →
+🎮 Play  → https://snake-game-naman-vashi.vercel.app/
 
 📑 Table of Contents
 Features
