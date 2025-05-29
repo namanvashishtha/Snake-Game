@@ -4,19 +4,19 @@ Welcome to the Snake Game – a modern take on the classic arcade favorite, buil
 🎮 Play  → https://snake-game-naman-vashi.vercel.app/
 
 📑 Table of Contents
-Features
+1) Features
 
-Technologies Used
+2) Technologies Used
 
-Getting Started
+3) Getting Started
 
-Editing the Code
+4) Editing the Code
 
-Deploying to Vercel
+5) Deploying to Vercel
 
-Best Aspects of the Project
+6) Best Aspects of the Project
 
-Contributing
+7) Contributing
 
 
 ✨ Features
@@ -35,15 +35,15 @@ Contributing
 🔧 Technologies Used
 This project uses a modern web development stack:
 
-Vite – Lightning-fast build tool for modern web apps
+1) Vite – Lightning-fast build tool for modern web apps
 
-TypeScript – Strong typing for scalable and maintainable code
+2) TypeScript – Strong typing for scalable and maintainable code
 
-React – Powerful library for building dynamic UI components
+3) React – Powerful library for building dynamic UI components
 
-shadcn-ui – Accessible, customizable component library
+4) shadcn-ui – Accessible, customizable component library
 
-Tailwind CSS – Utility-first framework for responsive and stunning styles
+5) Tailwind CSS – Utility-first framework for responsive and stunning styles
 
 🚀 Getting Started
 1. Clone the Repository
