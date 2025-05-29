@@ -1,4 +1,4 @@
-Snake Game
+# Snake Game
 
 Welcome to the Snake Game, a modern twist on the classic arcade game built with a cutting-edge web tech stack. Navigate the snake to eat food, grow longer, and chase high scores in a sleek, responsive interface. Hosted on Vercel, this project is perfect for developers and retro gaming fans looking to explore a fun, extensible web application.
 
